@@ -25,24 +25,24 @@ npm start
 
 **Usage**
 
-**As a Student:**
-  * Sign up for a quizeGAME account.
-  * Browse and play quizzes on various subjects.
-  * Track your progress and compete with friends.
- ** As an Educator:**
-  * Create custom quizzes for your students.
-  Engage your classroom with gamified learning experiences.
-  Monitor your students' performance and assess their knowledge.
-  As a Trivia Enthusiast:
+1. **As a Student:**
+    * Sign up for a quizeGAME account.
+    * Browse and play quizzes on various subjects.
+    * Track your progress and compete with friends.
+2. ** As an Educator:**
+    * Create custom quizzes for your students.
+    * Engage your classroom with gamified learning experiences.
+    * Monitor your students' performance and assess their knowledge.
+    * As a Trivia Enthusiast:
 
-**Explore a wide range of trivia quizzes.**
-  Compete with others and climb the leaderboard.
-  Share your quiz achievements on social media.
+3. **Explore a wide range of trivia quizzes.**
+    * Compete with others and climb the leaderboard.
+    * Share your quiz achievements on social media.
   
-**As a Lifelong Learner:**
-  Choose from a variety of topics to expand your knowledge.
-  Enjoy learning in a gamified and interactive way.
-  Challenge yourself with quizzes on new subjects.
+4. **As a Lifelong Learner:**
+    * Choose from a variety of topics to expand your knowledge.
+    * Enjoy learning in a gamified and interactive way.
+    * Challenge yourself with quizzes on new subjects.
   
 **Contributing**
 
