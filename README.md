@@ -1,4 +1,4 @@
-# QuizGAME is an interactive game application
+## QuizGAME is an interactive game application
 **# Project Description**
 
 quizeGAME is an interactive and educational platform that offers a fun and engaging way to enhance your knowledge through interactive quizzes and games. Whether you're a student looking to reinforce your learning, an educator seeking to make lessons more interactive, a trivia enthusiast, or a lifelong learner, quizeGAME has something for you.
@@ -53,3 +53,24 @@ We welcome contributions from the community to make quizeGAME even better! If yo
   Make your changes and ensure the code passes all tests.
   Submit a pull request, explaining the changes and why they're valuable.
   
+## Setup & Installation
+
+Make sure you have the latest version of Python installed.
+
+```bash
+git clone <repo-url>
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running The App
+
+```bash
+python main.py
+```
+
+## Viewing The App
+
+Go to `http://127.0.0.1:5000`
