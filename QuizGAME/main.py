@@ -90,7 +90,7 @@ topFrame.grid()
 #------------
 #adding image to top frame
 #import image
-image50=PhotoImage(file='assets/50-50.png')
+image50=PhotoImage(file='QuizGAME/assets/50-50.png')
 
 #create button to add th 50-50 image
 lifeline50Button=Button(topFrame,
@@ -102,7 +102,7 @@ lifeline50Button=Button(topFrame,
 lifeline50Button.grid(row=0,column=0)
 
 #creating audience image
-imageaudience=PhotoImage(file='assets/audiencePole.png')
+imageaudience=PhotoImage(file='QuizGAME/assets/audiencePole.png')
 
 #creating button for audience image
 lifelineaudience=Button(topFrame,
@@ -116,7 +116,7 @@ lifelineaudience.grid(row=0,column=1)
 
 #create phone a friend button
 #creating phone a friend image
-imagephonefriend=PhotoImage(file='assets/phoneAFriend.png')
+imagephonefriend=PhotoImage(file='QuizGAME/assets/phoneAFriend.png')
 
 #creating button for audience image
 lifelinephonefriend=Button(topFrame,
@@ -137,7 +137,7 @@ centerFrame.grid(row=1,column=0)
 
 #------------------------------
 #ADDING IMAGE TO CENTER RAME
-centerImage=PhotoImage(file='assets/center.png')
+centerImage=PhotoImage(file='QuizGAME/assets/center.png')
 
 #since the center imge will not be clickable "Label" was used
 logoImage=Label(centerFrame,
@@ -153,7 +153,7 @@ bottomFrame=Frame(leftframe)
 bottomFrame.grid(row=2,column=0)
 
 #Adding image to bottom from
-layoutImage=PhotoImage(file='assets/lay.png')
+layoutImage=PhotoImage(file='QuizGAME/assets/lay.png')
 
 #creating button for audience image
 layoutLabel=Button(bottomFrame,
@@ -172,7 +172,7 @@ rightframe=Frame(root,
 rightframe.grid(row=0,column=1)
 
 #ADDING IMAGE TO RIGHT FRAME
-priceImage=PhotoImage(file='assets/Picture0.png')
+priceImage=PhotoImage(file='QuizGAME/assets/Picture0.png')
 
 #adding label to image
 priceLabel=Label(rightframe,
