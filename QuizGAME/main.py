@@ -16,6 +16,20 @@ def select(event):
             answerOptionButtonB.config(text=second_option[i+1])
             answerOptionButtonC.config(text=third_option[i+1])
             answerOptionButtonD.config(text=fourth_option[i+1])
+            #adding prices label
+            priceLabel.config(image=priceImages[i])
+
+#creating pop up window on another window with that help of Toplevel
+        else:
+            root1=Toplevel()
+            root1.config(bg='black')
+            root1.geometry('500x400+140+30')
+            root1.title('You won 0 pound')
+            imgLabel=Label(root1,image=centerImage,bd=0)
+            imgLabel.pack()
+
+            root1.mainloop()
+            break
 
 
 
@@ -173,6 +187,41 @@ rightframe.grid(row=0,column=1)
 
 #ADDING IMAGE TO RIGHT FRAME
 priceImage=PhotoImage(file='QuizGAME/assets/Picture0.png')
+priceImage1=PhotoImage(file='QuizGAME/assets/Picture1.png')
+priceImage2=PhotoImage(file='QuizGAME/assets/Picture2.png')
+priceImage3=PhotoImage(file='QuizGAME/assets/Picture3.png')
+priceImage4=PhotoImage(file='QuizGAME/assets/Picture4.png')
+priceImage5=PhotoImage(file='QuizGAME/assets/Picture5.png')
+priceImage6=PhotoImage(file='QuizGAME/assets/Picture6.png')
+priceImage7=PhotoImage(file='QuizGAME/assets/Picture7.png')
+priceImage8=PhotoImage(file='QuizGAME/assets/Picture8.png')
+priceImage9=PhotoImage(file='QuizGAME/assets/Picture9.png')
+priceImage10=PhotoImage(file='QuizGAME/assets/Picture10.png')
+priceImage11=PhotoImage(file='QuizGAME/assets/Picture11.png')
+priceImage12=PhotoImage(file='QuizGAME/assets/Picture12.png')
+priceImage13=PhotoImage(file='QuizGAME/assets/Picture13.png')
+priceImage14=PhotoImage(file='QuizGAME/assets/Picture14.png')
+priceImage15=PhotoImage(file='QuizGAME/assets/Picture15.png')
+
+#Object list variable creation for price images
+
+priceImages = [
+    priceImage1,
+    priceImage2,
+    priceImage3,
+    priceImage4,
+    priceImage5,
+    priceImage6,
+    priceImage7,
+    priceImage8,    
+    priceImage9,    
+    priceImage10,
+    priceImage11,
+    priceImage12,
+    priceImage13,
+    priceImage14,
+    priceImage15
+]
 
 #adding label to image
 priceLabel=Label(rightframe,
