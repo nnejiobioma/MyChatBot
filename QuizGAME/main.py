@@ -20,13 +20,75 @@ def select(event):
             priceLabel.config(image=priceImages[i])
 
 #creating pop up window on another window with that help of Toplevel
-        else:
+        if value not in correct_answers:
+            def Close():
+                root1.destroy()
+                root.destroy()
+
+
+        #Define try again to reset question and price
+            def tryagain():
+                root1.destroy()
+                questionArea.delete(1.0,END)
+                questionArea.insert(END,questions[0])
+                
+                labelOptionA.config(text=first_option[0])
+                labelOptionB.config(text=second_option[0])
+                labelOptionC.config(text=third_option[0])
+                labelOptionD.config(text=fourth_option[0])
+                
+                priceLabel.config(image=priceImage)
+
+                
+
+
+
             root1=Toplevel()
             root1.config(bg='black')
             root1.geometry('500x400+140+30')
             root1.title('You won 0 pound')
             imgLabel=Label(root1,image=centerImage,bd=0)
-            imgLabel.pack()
+            imgLabel.pack(pady=30)
+
+            #CREATING LOSS WINDOW
+            loseLabel=Label(root1,text='You Lose',
+                            font=('arial',40,'bold'),
+                            bg='black',
+                            fg='white'
+                            )
+            loseLabel.pack()
+
+            tryagainButton=Button(root1,text='Try Again',
+                                  font=('arial',20,'bold'),
+                                  bg='black',
+                                  fg='white',
+                                  bd=0,
+                                  activebackground='black',
+                                  activeforeground='white',
+                                  cursor='hand2',
+                                  command=tryagain
+                                  )
+            tryagainButton.pack()
+
+            closeButton=Button(root1,text='Close',
+                                  font=('arial',20,'bold'),
+                                  bg='black',
+                                  fg='white',
+                                  bd=0,
+                                  activebackground='black',
+                                  activeforeground='white',
+                                  cursor='hand2',
+                                  command=Close
+                                  )
+            closeButton.pack()
+
+            sadImage=PhotoImage(file=('QuizGAME/assets/sad.png'))
+            sadLable=Label(root1,image=sadImage, bg='black')
+            sadLable.place(x=30,y=280,)
+
+            sadLable1=Label(root1,image=sadImage, bg='black')
+            sadLable1.place(x=400,y=280,)
+
 
             root1.mainloop()
             break
@@ -182,7 +244,9 @@ layoutLabel.grid(row=0,column=3)
 rightframe=Frame(root,
                  bg='black',
                  pady=25,
-                 padx=50)
+                 padx=50,
+                 )
+#rightframe.place(x=400,y=0)
 rightframe.grid(row=0,column=1)
 
 #ADDING IMAGE TO RIGHT FRAME
